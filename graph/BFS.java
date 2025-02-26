@@ -36,6 +36,14 @@ public class BFS {
     }
 
     private static ArrayList<Edge>[] initialiseGraph(int size) {
+        /*
+         *  ...  1 - 3
+         *  .. / ...|...\
+         * 0 .......|.... 5 - 6
+         * ...\ ....|.../
+         * ....2 - .4
+         */
+
         ArrayList<Edge>[] graph = new ArrayList[size];
 
         for (int itr = 0; itr < size; itr++) {
